@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: darkgrey; /* Light gray background */
+    color: black; /* Dark text color */
+}
+
+header {
+    background-color: #212121; /* Mat Black */
+    color: #fff; /* White text color */
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px; /* Rounded borders */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px; /* Adjust spacing between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Default text color */
+    padding: 8px 15px; /* Adjust padding for better spacing */
+    border-radius: 10px; /* Rounded borders for each item */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Assign different background colors to each item */
+nav ul li:nth-child(1) a {
+    background-color: #f39c12; /* Orange */
+}
+
+nav ul li:nth-child(2) a {
+    background-color: #f39c12; /* Orange */
+}
+
+nav ul li:nth-child(3) a {
+    background-color: #f39c12; /* Orange */
+}
+
+nav ul li:nth-child(4) a {
+    background-color: #f39c12; /* Orange */
+}
+
+nav ul li:nth-child(5) a {
+    background-color: #f39c12; /* Orange */
+}
+nav ul li:nth-child(6) a {
+    background-color: #f39c12;}
+
+nav ul li a:hover {
+    color: #3498db; /* Change color on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+.return-home {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db; /* Blue button */
+    color: #fff; /* White text color */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Add the rest of your styles here */
+
+
+.video-section,
+.post-section,
+.community-section {
+    background-color: #fff; /* White background for content sections */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+.review-form,
+.reviews {
+    margin-top: 20px;
+}
+
+.review-form form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.review-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.review-form button {
+    background-color: #3498db; /* Blue button */
+    color: #fff; /* White text color */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Add this to your styles.css */
+
+.video-skeleton {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.video-placeholder {
+    width: 30%; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    background-color: #ddd; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
