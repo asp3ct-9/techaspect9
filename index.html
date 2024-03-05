@@ -1,7 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechAspect</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,25 +26,32 @@
 <main>
     <hr>
     <section class="welcome-section">
-    <h2>Welcome to TechAspect</h2>
-    <p>Select a field to explore more.</p>
+        <h2>Welcome to TechAspect</h2>
+        <p>Select a field to explore more.</p>
 
-    <div class="video-skeleton">
-        <!-- Replace 'VIDEO_ID' with the actual YouTube video IDs -->
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/eKqY-oP1d_Y?si=UZqv4pDDUzp8MzU8" frameborder="0" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/NWnBxQjssvQ?si=91ct0YT8Jo47-kQX" frameborder="0" allowfullscreen></iframe>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/KsXp22QLMv0?si=1UqQnyWBTX_5tU-E" frameborder="0" allowfullscreen></iframe>
-    </div>
-</section>
+        <div class="video-skeleton">
+            <!-- Replace 'VIDEO_ID' with the actual YouTube video IDs -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/eKqY-oP1d_Y?si=UZqv4pDDUzp8MzU8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/NWnBxQjssvQ?si=91ct0YT8Jo47-kQX" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/KsXp22QLMv0?si=1UqQnyWBTX_5tU-E" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
 
-<hr>
+    <hr>
     <section class="top-rated-section">
         <h2>Top Rated Videos</h2>
         <ul id="topRatedVideos">
             <!-- Top-rated videos will be dynamically added here using JavaScript -->
         </ul>
     </section>
-<hr>
+
+    <hr>
     <section class="review-section">
         <h2>Student Reviews</h2>
         <div class="review-form">
