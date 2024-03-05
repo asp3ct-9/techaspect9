@@ -28,6 +28,8 @@ nav ul {
 nav ul li {
     display: inline;
     margin-left: 15px; /* Adjust spacing between navigation items */
+    margin-right: 15px; /* Add margin to the right of each item */
+
 }
 
 nav ul li a {
