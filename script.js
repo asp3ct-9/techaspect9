@@ -6,23 +6,27 @@ document.addEventListener('DOMContentLoaded', function () {
         // Add more top-rated videos as needed
     ];
 
-    // Display top-rated videos     
-    const topRatedVideosContainer = document.getElementById('topRatedVideos');
-    topRatedVideosData.forEach(video => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<a href="${video.url}" target="_blank">${video.title}</a>`;
-        topRatedVideosContainer.appendChild(listItem);
-    });
+    // Function to display top-rated videos
+    function displayTopRatedVideos() {
+        const topRatedVideosContainer = document.getElementById('topRatedVideos');
+        topRatedVideosData.forEach(video => {
+            const listItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = video.url;
+            link.target = '_blank';
+            link.textContent = video.title;
+            listItem.appendChild(link);
+            topRatedVideosContainer.appendChild(listItem);
+        });
+    }
 
-    // Handle review form submission
-    const reviewForm = document.getElementById('reviewForm');
-    const reviewsContainer = document.getElementById('reviews');
-
-    reviewForm.addEventListener('submit', function (event) {
+    // Function to handle review form submission
+    function handleReviewFormSubmission(event) {
         event.preventDefault();
 
         const name = document.getElementById('name').value;
         const reviewText = document.getElementById('review').value;
+        const reviewsContainer = document.getElementById('reviews');
 
         // Display the new review
         const newReview = document.createElement('div');
@@ -30,6 +34,11 @@ document.addEventListener('DOMContentLoaded', function () {
         reviewsContainer.appendChild(newReview);
 
         // Reset the form
-        reviewForm.reset();
-    });
+        event.target.reset();
+    }
+
+    // Event listeners
+    displayTopRatedVideos(); // Call function to display top-rated videos
+    const reviewForm = document.getElementById('reviewForm');
+    reviewForm.addEventListener('submit', handleReviewFormSubmission);
 });
