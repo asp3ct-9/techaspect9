@@ -147,3 +147,22 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Styles for smaller screens (e.g., smartphones) */
+@media screen and (max-width: 600px) {
+  /* Adjust header font size for smaller screens */
+  header h1 {
+    font-size: 24px;
+  }
+
+  /* Adjust navigation menu styles for smaller screens */
+  nav ul {
+    flex-direction: column;
+  }
+
+  /* Adjust video container size for smaller screens */
+  .video-skeleton iframe {
+    width: 100%;
+    height: auto;
+  }
+}
