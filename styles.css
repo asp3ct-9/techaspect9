@@ -23,6 +23,12 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex; /* Change the display property to flex */
+    justify-content: center; /* Horizontally center the items */
+}
+
+nav ul li {
+    margin: 0 10px; /* Adjust the margin between items */
 }
 
 nav ul li {
