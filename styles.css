@@ -168,3 +168,21 @@ footer {
     height: auto;
   }
 }
+
+/* Add this to your styles.css file */
+.video-skeleton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.video-container {
+    width: calc(33.33% - 20px); /* Adjust width of video container to fit 3 videos per row with spacing */
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    width: 100%; /* Make iframe responsive */
+    height: 200px; /* Set desired height for videos */
+}
