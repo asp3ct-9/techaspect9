@@ -1,9 +1,13 @@
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: darkgrey; /* Light gray background */
-    color: black; /* Dark text color */
+    background-image: url('bg.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    color: white;
+    background-size: cover;
+    background-position: center;
+    overflow-y: scroll;
 }
 
 header {
@@ -149,11 +153,13 @@ main {
 footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px;
+    text-align: right;
+    padding: 5px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    right: 0; /* Position at the bottom right */
+   /* Adjust the width as needed */
+    font-size: 12px; /* Adjust the font size as needed */
 }
 
 /* Styles for smaller screens (e.g., smartphones) */
@@ -191,4 +197,98 @@ footer {
 .video-container iframe {
     width: 100%; /* Make iframe responsive */
     height: 200px; /* Set desired height for videos */
+}
+.course-description {
+    height: 150px; /* Adjust the height as needed */
+    
+}
+
+.courses {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 45%; /* Adjust width of course cards */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px
+}
+
+.course img {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+.course-details {
+    margin-top: 20px;
+}
+
+.course-details h2 {
+    margin-top: 0;
+}
+
+.course-details p {
+    margin: 5px 0;
+    color: black
+}
+.course-details p.price {
+    font-weight: bold; /* Optionally set font weight for price */
+}
+.course-details p.rating {
+    font-weight: bold; /* Optionally set font weight for price */
+}
+.course-details p.duration {
+    font-weight: bold; /* Optionally set font weight for price */
+}
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .video-skeleton iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 8px;
+    }
+
+    .video-container {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .video-container {
+        width: calc(33.33% - 20px);
+    }
 }
