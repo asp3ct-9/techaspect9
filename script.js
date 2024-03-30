@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     // Top-rated videos (example data)
     const topRatedVideosData = [
