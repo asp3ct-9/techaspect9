@@ -1,4 +1,4 @@
-
+/* Global styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -10,16 +10,16 @@ body {
     overflow-y: scroll;
 }
 
-header {
-    background-color: #212121; /* Mat Black */
-    color: #fff; /* White text color */
-    padding: 10px;
-    text-align: center;
+a {
+    text-decoration: none;
 }
 
+/* Navigation bar styles */
 nav {
+    background-color: #2196F3;
+    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
     border-radius: 10px; /* Rounded borders */
 }
 
@@ -33,13 +33,9 @@ nav ul {
 
 nav ul li {
     margin: 0 10px; /* Adjust the margin between items */
-}
-
-nav ul li {
     display: inline;
     margin-left: 15px; /* Adjust spacing between navigation items */
     margin-right: 15px; /* Add margin to the right of each item */
-
 }
 
 nav ul li a {
@@ -70,34 +66,43 @@ nav ul li:nth-child(4) a {
 nav ul li:nth-child(5) a {
     background-color: #f39c12; /* Orange */
 }
+
 nav ul li:nth-child(6) a {
-    background-color: #f39c12;}
+    background-color: #f39c12;
+}
 
 nav ul li a:hover {
     color: #3498db; /* Change color on hover */
+}
+
+/* Main content styles */
+header {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
 }
 
 main {
     padding: 20px;
 }
 
-.return-home {
-    display: block;
-    margin-top: 20px;
-    text-align: center;
-    text-decoration: none;
-    background-color: #3498db; /* Blue button */
-    color: #fff; /* White text color */
-    padding: 10px;
-    border-radius: 5px;
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
 }
 
-/* Add the rest of your styles here */
-
-
-.video-section,
-.post-section,
-.community-section {
+.welcome-section,
+.top-rated-section,
+.review-section {
+    text-align: center;
     background-color: #fff; /* White background for content sections */
     padding: 20px;
     margin-bottom: 20px;
@@ -105,14 +110,8 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
 }
 
-.review-form,
-.reviews {
+.review-form {
     margin-top: 20px;
-}
-
-.review-form form {
-    max-width: 400px;
-    margin: 0 auto;
 }
 
 .review-form label {
@@ -120,143 +119,53 @@ main {
     margin-bottom: 5px;
 }
 
-.review-form input,
 .review-form textarea {
     width: 100%;
-    padding: 8px;
+    height: 100px;
     margin-bottom: 10px;
 }
 
 .review-form button {
     background-color: #3498db; /* Blue button */
     color: #fff; /* White text color */
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
 }
 
+.review-form button:hover {
+    background-color: #2980b9;
+}
 
-/* Add this to your styles.css */
-
-.video-skeleton {
+.reviews {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.video-placeholder {
-    width: 30%; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
-    background-color: #ddd; /* Light gray background */
-    border-radius: 8px; /* Rounded corners */
+.return-home {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #3498db; /* Blue button */
+    color: #fff; /* White text color */
+    padding: 10px;
+    border-radius: 5px;
 }
+
 footer {
+    text-align: center;
     background-color: #333;
     color: #fff;
-    text-align: right;
     padding: 5px;
     position: fixed;
     bottom: 0;
     right: 0; /* Position at the bottom right */
-   /* Adjust the width as needed */
     font-size: 12px; /* Adjust the font size as needed */
 }
 
-/* Styles for smaller screens (e.g., smartphones) */
-@media screen and (max-width: 600px) {
-  /* Adjust header font size for smaller screens */
-  header h1 {
-    font-size: 24px;
-  }
-
-  /* Adjust navigation menu styles for smaller screens */
-  nav ul {
-    flex-direction: column;
-  }
-
-  /* Adjust video container size for smaller screens */
-  .video-skeleton iframe {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Add this to your styles.css file */
-.video-skeleton {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.video-container {
-    width: calc(33.33% - 20px); /* Adjust width of video container to fit 3 videos per row with spacing */
-    margin-bottom: 20px;
-}
-
-.video-container iframe {
-    width: 100%; /* Make iframe responsive */
-    height: 200px; /* Set desired height for videos */
-}
-.course-description {
-    height: 150px; /* Adjust the height as needed */
-    
-}
-
-.courses {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.course {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    width: 45%; /* Adjust width of course cards */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px
-}
-
-.course img {
-    width: 100%; /* Make the image fill its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px;
-}
-
-.course-details {
-    margin-top: 20px;
-}
-
-.course-details h2 {
-    margin-top: 0;
-}
-
-.course-details p {
-    margin: 5px 0;
-    color: black
-}
-.course-details p.price {
-    font-weight: bold; /* Optionally set font weight for price */
-}
-.course-details p.rating {
-    font-weight: bold; /* Optionally set font weight for price */
-}
-.course-details p.duration {
-    font-weight: bold; /* Optionally set font weight for price */
-}
-button {
-    background-color: #3498db;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
 /* Responsive Styles */
 @media screen and (max-width: 600px) {
     header h1 {
@@ -267,9 +176,14 @@ button:hover {
         flex-direction: column;
     }
 
-    .video-skeleton iframe {
-        width: 100%;
-        height: auto;
+    .welcome-section,
+    .top-rated-section,
+    .review-section {
+        padding: 10px;
+    }
+
+    .reviews {
+        gap: 10px;
     }
 }
 
@@ -281,14 +195,14 @@ button:hover {
     nav ul li a {
         padding: 8px;
     }
-
-    .video-container {
-        width: calc(50% - 20px);
-    }
 }
 
 @media screen and (max-width: 1024px) {
-    .video-container {
-        width: calc(33.33% - 20px);
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 8px;
     }
 }
